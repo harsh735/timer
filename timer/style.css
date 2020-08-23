@@ -1,0 +1,239 @@
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: grid;
+  background: linear-gradient(to left top, #0045D6, #00A9F6);
+  place-items: center;
+  background-color: #659de7;
+}
+
+.timer {
+	margin-top: 3rem;
+	color: #ffffff;
+	text-align: center;
+	width: 20rem;
+	height: 20rem;
+	border: 5px solid #fff;
+	border-radius: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#long {
+ margin-left: 2rem;
+ box-shadow:inset 0px 1px 0px 0px #ffffff;
+ background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+ background-color:#ffffff;
+ border-radius:6px;
+ border:1px solid #dcdcdc;
+ color:#666666;
+ font-family:'Poppins';
+ font-size:15px;
+ font-weight:500;
+ padding:6px 24px;
+}
+#long:hover {
+ background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+ background-color:#f6f6f6;
+}
+
+#short {
+	margin-left: 2rem;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	color:#666666;
+	font-family:'Poppins';
+	font-size:15px;
+	font-weight:500;
+	padding:6px 24px;
+}
+#short:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+
+#pom {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	color:#666666;
+	font-family:'Poppins';
+	font-size:15px;
+	font-weight:500;
+	padding:6px 24px;
+}
+#pom:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+
+
+.row {
+	width: 100%;
+}
+
+.fa-play {
+  color: #18a013;
+  border: 2px solid transparent;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.fa-redo-alt {
+	color: red;
+	border: 2px solid transparent;
+	padding: 1rem;
+	border-radius: 2rem;
+
+}
+
+.fa-play:hover {
+  color: #0b6b34;
+  border: 2px solid #0e1ac0;
+  transition: 0.3s ease;
+}
+
+.fa-redo-alt:hover {
+	color: #d65a20;
+	border: 2px solid #8aec0a;
+	transition: 0.3s ease;
+
+}
+
+.btn {
+	color:white;
+	width: 100px;
+	height: 50px;
+	margin: 1.2rem;
+}
+
+.show_message {
+	display: block;
+	padding: 1rem 0;
+	color: #272343;
+	background: #c7db0f;
+	border-radius: 0.5rem;
+	transition: 0.5s ease;
+  }
+
+
+
+
+
+
+
+
+/*
+
+.stop_but {
+ justify-content: center;
+ background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+ background-color:#d0451b;
+ border-radius:8px;
+ border:1px solid #942911;
+ display:inline-block;
+ cursor:pointer;
+ color:#ffffff;
+ font-family:Arial;
+ font-size:17px;
+ padding:10px 17px;
+ text-decoration:none;
+}
+.stop_but:hover {
+ background:linear-gradient(to bottom, #bc3315 8%, #d0451b 100%);
+ background-color:#bc3315;
+}
+.stop_but:active {
+ position:relative;
+ top:1px;
+}
+
+.myButton {
+	background-color:#44c767;
+	border-radius:8px;
+	border:1px solid #18ab29;
+	display: inline-block;
+	cursor: pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 17px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+*/
+.tom{
+  position: absolute;
+  left: 600px;
+  top: 270px;
+  width:250px;
+  border-radius: 100%;
+  bottom: 340px;
+  opacity: 0.4;
+
+}
+
+.base-timer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
